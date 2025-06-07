@@ -11,13 +11,25 @@ body {
     font-family: "EB Garamond", serif;
 }
 
-header {
-    text-align: center;
+/* ======== REUSABLE CSS ======== */
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ======== NAVBAR ======== */
+
+header .navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     padding-top: 2em;
 }
 
 header img {
-    width: 8%;
+    width: 60%;
 }
 
 header img:hover {
@@ -25,8 +37,31 @@ header img:hover {
     transition: ease-out .1s;
 }
 
+.navbar ol {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 1.8em;
+}
+
+.navbar ol li {
+    font-size: 1.2em;
+}
+
+.navbar ol li:hover {
+    scale: 1.1;
+}
+
+.navbar ol li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ======== MAIN ======== */
+
 .section {
     text-align: center;
+    margin-top: 5em;
 }
 
 .section__destaque img {
@@ -53,11 +88,41 @@ header img:hover {
 }
 
 .section__paragraph {
-    padding: 2em 30em;
+    width: 40em;
+    margin: 2em auto;
 }
 
 footer {
     text-align: center;
     padding: 2em 0;
     background-color: #fff;
+    margin-top: 5em;
+}
+
+/* ======== cardapio.html ======== */
+main h1 {
+    text-align: center;
+    border-top: .5em dotted #F5BD26;
+    border-bottom: .5em dotted #F5BD26;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
+main article {
+    display: flex;
+    flex-direction: row;
+}
+
+main article aside {
+    width: 25em;
+}
+
+.cardapio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5em;
+}
+
+.cardapio__title {
+    display: none;
 }
