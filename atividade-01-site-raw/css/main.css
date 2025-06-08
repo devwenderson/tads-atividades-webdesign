@@ -18,6 +18,14 @@ body {
     margin: 0 auto;
 }
 
+.section__title {
+    text-align: center;
+    border-top: .3em dotted #F5BD26;
+    border-bottom: .3em dotted #F5BD26;
+    padding: 1em 0;
+    margin-top: 1em;
+}
+
 /* ======== NAVBAR ======== */
 
 header .navbar {
@@ -57,37 +65,39 @@ header img:hover {
     color: black;
 }
 
-/* ======== MAIN ======== */
+/* ======== index.html ======== */
 
-.section {
+.index-section {
     text-align: center;
     margin-top: 5em;
 }
 
-.section__destaque img {
+.index-section__destaque img {
     border-top: 3px solid #F5BD26;
     border-bottom: 3px solid #F5BD26;
     margin-bottom: 3em;
+    width: 80%;
 }
 
-.section__cards {
+.index-section__cards {
     text-align: center;
 }
 
-.section__cards img {
+.index-section__cards img {
     margin: 1em;
 }
 
-.section__title {
+.index-section__title {
     text-align: center;
     font-size: 2em;
+    font-style: italic;
 }
 
-.section__separator {
-    border: 2px solid #F9F1DC;
+.index-section__separator {
+    border: 2px solid #F5BD26;
 }
 
-.section__paragraph {
+.index-section__paragraph {
     width: 40em;
     margin: 2em auto;
 }
@@ -100,12 +110,15 @@ footer {
 }
 
 /* ======== cardapio.html ======== */
-main h1 {
-    text-align: center;
-    border-top: .5em dotted #F5BD26;
-    border-bottom: .5em dotted #F5BD26;
-    padding: 1em 0;
-    margin-top: 1em;
+.cardapio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5em;
+    gap: 2em 0;
+}
+
+.cardapio__title {
+    display: none;
 }
 
 main article {
@@ -117,12 +130,42 @@ main article aside {
     width: 25em;
 }
 
-.cardapio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+/* ======== chefe.html ======== */
+.chefe-section__body {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
     margin-top: 5em;
 }
 
-.cardapio__title {
-    display: none;
+.chefe-section__body figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.chefe-section__body figure img {
+    border: .5em solid #F5BD26;
+    border-radius: 1em;
+}
+
+.chefe-section__body figure figcaption {
+    font-size: 1.4em;
+}
+
+.chefe-section__body p {
+    font-size: 1.4em;
+}
+
+/* ======== contato.html ======== */
+.contato-section__body {
+    background-color: #F9F1DC;
+    padding: 1.5em 3em;
+    margin-top: 3em;
+}
+
+.contato-section__body article {
+    display: flex;
+    flex-direction: column; 
 }
