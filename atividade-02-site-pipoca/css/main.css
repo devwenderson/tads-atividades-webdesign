@@ -3,13 +3,26 @@
 :root {
     --background-color: #F4F1E7;
     --yellow: #F6B144;
-    --black: #232321 
+    --black: #232321;
+
+    --text-color-dark: #232321;
+    --text-color-light: #F4F1E7;
+    --text-color-yellow: #F6B144;
 }
 
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+/* =========== GENERAL =========== */
+a {
+    text-decoration: none;
+}
+
+section {
+    margin-top: 3em;
 }
 
 /* =========== Reusable CSS =========== */
@@ -21,5 +34,149 @@
 /* =========== index.html =========== */
 body {
     font-family: "Shantell Sans", cursive;
+    background-color: var(--background-color);
 }
 
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2em 0;
+    z-index: 2;
+}
+
+header a {
+    color: var(--text-color-dark);
+}
+
+header a:hover {
+    scale: 1.1;
+}
+
+header nav ol {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+}
+
+header nav ol li:hover {
+    scale: 1.1;
+}
+
+/* HERO */
+section.hero {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 90vh;
+}
+
+section.hero .hero__content h3 {
+    font-size: 3em;
+}
+
+section.hero .hero__content h3 span {
+    color: var(--text-color-yellow)
+}
+
+section.hero .hero__content p {
+    font-size: 1.4em;
+    width: 50%;
+    margin-top: 0.7em;
+}
+
+section.hero .hero__content button {
+    background-color: var(--yellow);
+    border: none;
+    font-size: 1em;
+    padding: 1em 2em;
+    border-radius: 50px;
+    font-family: "Shantell Sans", cursive;
+    margin-top: 1em;
+}
+
+section.hero .hero__content button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+section.hero figure {
+    display: flex;
+    justify-content: end;
+    width: 70%; 
+}
+
+section.hero figure img {
+    width: 70%;
+}
+
+/* DESTAQUE */
+section.section-destaques {
+    margin-top: 3em;
+}
+
+section.section-destaques h2 {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+section.section-destaques div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section.section-destaques div figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section.section-destaques div figure img{
+    height: 18em;
+}
+
+section.section-destaques div figure figcaption {
+    font-size: 1.2em;
+}
+
+/* FOOTER */
+footer {
+    background-color: var(--black);
+    padding: 3em 0;
+    margin-top: 5em;
+}
+
+footer div.footer__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    color: var(--text-color-light);
+}
+
+
+footer div.footer__content nav ol {
+    list-style: none;
+}
+
+footer div.footer__content nav h3 {
+    color: var(--text-color-yellow);
+    font-size: 1.5em;
+}
+
+footer div.footer__content nav ol li {
+    margin-bottom: 0.5em;
+}
+
+footer div.footer__content nav ol li:hover {
+    scale: 1.1;
+}
+
+footer div.footer__content nav ol li a {
+    color: var(--text-color-light);
+}

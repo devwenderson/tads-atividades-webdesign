@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="container">
         <a href="index.html">
             <h1>Pipokus</h1>
         </a>
@@ -19,14 +19,13 @@
                 <li><a href="contato.html">Contato</a></li>
             </ol>
         </nav>
-
     </header>
 
     <main>
-        <section>
+        <section class="hero container">
             <h2></h2>
-            <div>
-                <h3>Simplesmente a melhor!</h3>
+            <div class="hero__content">
+                <h3>Simplesmente a <span>melhor!</span></h3>
                 <p>Tenha o sabor do ouro na ponta da língua</p>
                 <button>Adicionar ao carrinho</button>
             </div>
@@ -35,7 +34,7 @@
             </figure>
         </section>
 
-        <section>
+        <section class="section-destaques container">
             <h2>Conheça nossos sabores</h2>
             <div>
                 <figure>
@@ -59,12 +58,17 @@
     </main>
 
     <footer>
-        <h2>Indústria Pipokus</h2>
-        <ol>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="tabela-nuricional.html">Tabela nutricional</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ol>
+        <div class="footer__content container">
+            <h2>Indústria Pipokus</h2>
+            <nav>
+                <h3>Institucional</h3>
+                <ol>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="tabela-nuricional.html">Tabela nutricional</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ol>
+            </nav>
+        </div>
     </footer>
 
     <link rel="stylesheet" href="css/main.css">
