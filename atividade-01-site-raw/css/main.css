@@ -110,25 +110,33 @@ footer {
 }
 
 /* ======== cardapio.html ======== */
-.cardapio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-top: 5em;
-    gap: 2em 0;
+table {
+    border-collapse: collapse;
+    margin-top: 3em;
 }
 
-.cardapio__title {
-    display: none;
+table thead tr {
+    background-color: #F5BD26;
+    text-align: left;
 }
 
-main article {
-    display: flex;
-    flex-direction: row;
+table th, table td {
+    padding: 1em 2em;
 }
 
-main article aside {
-    width: 25em;
+table tbody tr:nth-child(even) {
+    background-color: #fff;
 }
+
+table tbody tr:last-child {
+    border-bottom: 2px solid #F5BD26;
+}
+
+table tbody tr td:nth-child(3) {
+    font-weight: bold;
+}
+
+
 
 /* ======== chefe.html ======== */
 .chefe-section__body {
