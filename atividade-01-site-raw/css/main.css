@@ -139,23 +139,29 @@ table tbody tr td:nth-child(3) {
 
 
 /* ======== chefe.html ======== */
-.chefe-section__body {
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    margin-top: 5em;
-}
 
-.chefe-section__body figure {
+article figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 3em;
 }
 
-.chefe-section__body figure img {
+article figure img {
     border: .5em solid #F5BD26;
     border-radius: 1em;
+    width: 30%;
+}
+
+article figure figcaption {
+    font-weight: bold;
+}
+
+article figure p {
+    text-align: center;
+    width: 50%;
+    margin-top: 1em;
 }
 
 .chefe-section__body figure figcaption {
