@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: linear-gradient(to right, #72CFED, #186C86);
+    padding: 2em 0;
+    margin-bottom: 3em;
+}
+
+section {
+    margin-top: 3em;
+    display: flex;
+    gap: 1em;
+}
+
+section div {
+    box-shadow: 0px 0px 0px 1px rgb(177, 177, 177);
+    border-radius: 1em;
+    padding: 2em 1.2em 6em 1.2em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section div span {
+    color: rgb(177, 177, 177);
+    text-align: right;
+}
+
+section div h3 {
+    color: #005C85;
+    font-size: 1.5em;
+}
