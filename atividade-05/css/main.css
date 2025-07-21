@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Mono', monospace;
+}
+
+header {
+    background-image: linear-gradient(to left, #7292a6, #224459);
+    height: 10vh;
+    color: #fff;
+    padding: 1em 2em;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 0.7fr 1fr 1fr 1fr ;
+    grid-template-areas:  
+    "nav sobre programacao programacao amanda-freire"
+    "nav eventos inscricao natalia-lima henrique-almeida"
+    "nav larissa-almeida inscricao organizacao organizacao"
+    ;
+    gap: 1rem;
+    padding: 1em 0;
+}
+
+section {
+    background-color: rgb(211, 211, 211);
+}
+
+nav {
+    grid-area: nav;
+    background-color: #90b6ce;
+    height: 80vh;
+    padding: 2em;
+}
+
+nav ol {
+    list-style-type: none;
+}
+
+nav ol li {
+    margin-bottom: 1em;
+}
+
+nav ol li a {
+    text-decoration: none;
+    color: #224459;
+    font-size: 1.5em;
+}
+
+section {
+    padding: 2em 3em;
+}
+
+section.foto p {
+    background-color: #a3a3a3;
+    color: #fff;
+}
+
+section#sobre {
+    grid-area: sobre;
+}
+
+section#eventos {
+    grid-area: eventos;
+}
+
+section#larissa-almeida {
+    grid-area: larissa-almeida;
+    background-image: url(../imgs/amanda.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section#programacao {
+    grid-area: programacao;
+}
+
+section#programacao table {
+    border-collapse: collapse;
+}
+
+section#programacao table tr td {
+    border: 1px solid #fff;
+    padding: 0.5em 3em;
+}
+
+section#inscricao {
+    grid-area: inscricao;
+    padding: 2em 3em;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+section#inscricao form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+section#inscricao form input {
+    border: 1px solid black;
+    padding: 1em 1em;
+}
+
+section#inscricao form input[type="submit"] {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+section#natalia-lima {
+    grid-area: natalia-lima;
+    background-image: url(../imgs/ellen.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#amanda-freire {
+    grid-area: amanda-freire;
+    background-image: url(../imgs/georgia.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+section#henrique-almeida {
+    grid-area: henrique-almeida;
+    background-image: url(../imgs/henrique.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+section#organizacao {
+    grid-area: organizacao;
+}
+
+footer {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #224459;
+    height: 10vh;
+}
