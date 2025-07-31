@@ -57,6 +57,8 @@ section {
 #relatorios div {
     border: 1px solid gray;
     flex-basis: 15em;
+    display: flex;
+    flex-direction: column;
 }
 
 #relatorios div p {

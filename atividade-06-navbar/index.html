@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+
+    <style>
+        header nav ol {
+            list-style-type: none;
+            display: flex;
+            gap: 1rem;
+        } 
+
+        header nav ol li {
+            background-color: rgb(0, 127, 136);
+            padding: 1em;
+            border-radius: 1em;
+            width: 100%;
+        }
+
+        header nav ol li:hover {
+            cursor: pointer;
+        }
+
+        header nav ol li a {
+            text-decoration: none;
+            color: white;
+        } 
+
+        .submenu-container {
+            position: relative;
+        }
+
+        .submenu {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            visibility: hidden;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            width: 170px;
+        }
+
+        .submenu-container:hover .submenu {
+            visibility: visible;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ol>
+                <li class="submenu-container">
+                    <a href="#">A diretoria</a>
+
+                    <ol class="submenu">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Identidade</a></li>
+                    </ol>
+                </li>
+                <li><a href="#">Horários</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Docentes</a></li>
+
+                <li class="submenu-container">
+                    <a href="#">Documentos</a>
+
+                    <ol class="submenu">
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        
+                    </ol>
+                </li>
+
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ol>
+        </nav>
+    </header>
+</body>
+</html>
